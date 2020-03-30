@@ -132,6 +132,20 @@ pbakaus:
   description:
     en: 'Open Web Developer Advocate at Google • Tools, Performance, Animation, UX'
 
+andreban:
+  name:
+    given: Andre
+    family: Bandarra
+  org:
+    name: Google
+    unit: Developer Relations
+  country: UK
+  role:
+    - author
+  email: andreban@google.com
+  description:
+    en: Andre is a Developer Advocate
+
 ianbarber:
   name:
     given: Ian
@@ -1359,13 +1373,13 @@ smcgruer:
 
 pjmclachlan:
   name:
-    given: Peter
+    given: PJ
     family: Mclachlan
   org:
     name: Google
     unit: Chrome
   description:
-    en: Peter is a Product Manager on Google's Chrome team responsible for web applications including Chrome advanced permissions, progressive web apps and web platform strategy for mobile.
+    en: PJ is a Product Manager on the Chrome Web Platform team responsible for Chrome permissions, notifications and progressive web apps.
   role:
     - author
 
@@ -1772,6 +1786,18 @@ rsolomakhin:
     - author
   twitter: rsolomakhin
   email: rouslan@google.com
+
+annasorokina:
+  name:
+    given: Anna
+    family: Sorokina
+  org:
+    name: Independent
+    unit: Developer
+  country: BY
+  role:
+    - translator
+  email: ann40a@yandex.ru
 
 emilystark:
   name:

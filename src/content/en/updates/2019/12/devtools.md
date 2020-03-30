@@ -2,7 +2,7 @@ project_path: /web/_project.yaml
 book_path: /web/updates/_book.yaml
 description: Support for let and class redeclarations in the Console, improved WebAssembly debugging, and more.
 
-{# wf_updated_on: 2019-12-05 #}
+{# wf_updated_on: 2020-02-06 #}
 {# wf_published_on: 2019-12-05 #}
 {# wf_tags: chrome80, devtools, devtools-whatsnew #}
 {# wf_featured_image: /web/updates/images/generic/chrome-devtools.png #}
@@ -12,6 +12,12 @@ description: Support for let and class redeclarations in the Console, improved W
 # What's New In DevTools (Chrome 80) {: .page-title }
 
 {% include "web/_shared/contributors/kaycebasques.html" %}
+
+<div class="video-wrapper-full-width">
+  <iframe class="devsite-embedded-youtube-video" data-video-id="2EiPb1opH3g"
+          data-autohide="1" data-showinfo="0" frameborder="0" allowfullscreen>
+  </iframe>
+</div>
 
 ## Support for `let` and `class` redeclarations in the Console {: #redeclarations }
 
@@ -203,32 +209,9 @@ was a long time ago and V8's garbage collector has cleaned it up.
 
 Chromium issue [#1004203](https://crbug.com/1004203)
 
-## Feedback {: #feedback }
+<<../../_shared/devtools-feedback.md>>
 
-[ML]: https://groups.google.com/forum/#!forum/google-chrome-developer-tools
-[WF]: https://github.com/google/webfundamentals/issues/new
-[SO]: https://stackoverflow.com/questions/tagged/google-chrome-devtools
-
-{% include "web/_shared/helpful.html" %}
-
-To discuss the new features and changes in this post, or anything else related to DevTools:
-
-* File definite bug reports and feature requests at [Chromium Bugs](https://crbug.com){:.external}.
-* Discuss possible features, changes, and bugs on the [Mailing List][ML]{:.external}.
-* Get help on how to use DevTools on [Stack Overflow][SO]{:.external}.
-* Tweet us at [@ChromeDevTools](https://twitter.com/chromedevtools).
-* File bugs on this document in the [Web Fundamentals][WF]{:.external} repository.
-
-## Consider Canary {: #canary }
-
-[canary]: https://www.google.com/chrome/browser/canary.html
-
-If you're on Mac or Windows, consider using [Chrome Canary][canary] as your default
-development browser. Canary gives you access to the latest DevTools features.
-
-Note: Canary is released as soon as its built, without testing. This means that Canary
-breaks about once-a-month. It's usually fixed within a day. You can go back to using Chrome
-Stable while Canary is broken.
+<<../../_shared/canary.md>>
 
 <<../../_shared/discover.md>>
 
