@@ -126,7 +126,7 @@ def fetchGithubFile(path, revision = None):
   """
   path = path.replace('/blob', '')
   if revision:
-    path = path.replace('master', revision.replace('refs/tags/', ''))
+    path = path.replace('main', revision.replace('refs/tags/', ''))
   url = 'https://raw.githubusercontent.com/%s' % path
   try:
     response = urllib2.urlopen(url)
@@ -190,7 +190,11 @@ def expandBook(book, lang='en'):
           results = results + expandBook(items, lang)
         else:
           newItems = yaml.load(tocFileContents)
-          results = results + expandBook(newItems['toc'], lang)
+          if 'toc' in newItems:
+            results = results + expandBook(newItems['toc'], lang)
+          else:
+            logging.error('Unable to get \'toc\' element from %s\n%s',
+                          item['include'], tocFileContents)
       else:
         results.append(expandBook(item, lang))
     return results
